@@ -6,8 +6,7 @@
 
 2. Apro il terminale ed eseguo il comando composer install
 
-3. Sempre nel terminale, al termine del comando composer install, eseguo il comando php artisan key:generate
-
+3. Sempre nel terminale, al termine del comando composer install, eseguo il comando 
 4. Sempre nel terminale, al termine dell'esecuzione di php artisan key:generate, eseguiamo il comando npm install (oppure, npm i)
 
 5. Sempre nel terminale, al termine di npm install, eseguire il comando npm run build
