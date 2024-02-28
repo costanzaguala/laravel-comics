@@ -1,15 +1,151 @@
 @import "~bootstrap/scss/bootstrap";
 
-main {
-    background-color: lightcoral;
+
+$primary-color:#0282f9;
+$secondary-color:#1c1c1c;
+$input-color: black;
+$footer-color: #303030;
+
+:root {
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.gatto-img {
-    height: 200px;
+// HEADER 
+
+#announcement-bar {
+    font-size: 12px;
 }
 
-.gatto-bg {
-    height: 200px;
-    background-image: url('../img/gatto.webp');
+header{
+    > *:first-child{
+        background-color: $primary-color;
+    }
+}
+
+header a {
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+form {
+    border-bottom: 2px solid $primary-color;
+}
+
+form input {
+    outline: none;
+    border: none;
+    text-align: end;
+}
+
+.btn {
+    outline: none;
+    border: none;
+} 
+
+// MAIN 
+
+#carousel-section{
+    max-height: 250px;
+    img {
+        object-fit: contain;
+        height: 100%;
+    }
+}
+
+#carousel-section{
+background-color: $primary-color;
+color:white;
+.jumbotron {
+    height: 250px;
+    img {
+        height: 100%;
+    }
+}
+
+}
+
+#comics-series{
+    .container{
+        position:relative;
+    }
+
+    #special-series{
+        padding:10px 10px;
+        background-color: $primary-color;
+        position:absolute;
+        bottom:100%;
+        left:0;
+        transform:translateY(50%);
+    }
+    .container-img-comics {
+        max-width: 150px;
+        max-height: 150px;
+        object-fit: contain;
+        overflow: hidden;
+        img {
+            width:100%
+        }
+    }
+}
+
+#links-comics{
+    background-color: $primary-color;
+    .img-container{
+        width:50px;
+        img{
+            width: 100%;
+        }
+    }
+}
+
+// FOOTER
+
+footer {
+    background-image: url('../img/footer-bg.jpg');
     background-size: contain;
+
+    ul {
+        list-style: none;
+        padding:0;
+    }
+
+    >*:first-child{
+       color:grey;
+       a{
+        text-decoration: none;
+       }
+       .footer-link{
+        color:grey;
+        &:hover{
+            color:white;
+        }
+       }
+    }
+}
+
+#right-side {
+    width: 100px;
+    background-image: url("../assets/img/dc-logo-bg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+ }
+
+
+#footer-bottom {
+    background-color: $footer-color;
+    .social{
+
+        >div{
+            height: 35px;
+            width:35px;
+
+            border-radius: 50%;
+            &:hover{
+                background-color:white;
+            }
+        }
+        }
+    
 }
